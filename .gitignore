@@ -5,3 +5,5 @@ Temp
 Assembly-CSharp.csproj
 WAKEUP.sln
 UserSettings
+.vs
+obj

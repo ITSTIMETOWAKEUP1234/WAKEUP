@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -110,11 +110,11 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 5418
+        width: 5386
         height: 2700
-      alignment: 9
-      pivot: {x: 0.45, y: 0.5}
-      border: {x: 0, y: 0, z: 97, w: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -129,12 +129,12 @@ TextureImporter:
       name: "\u53F6\u6893\u623F\u95F41000_1"
       rect:
         serializedVersion: 2
-        x: 4890
+        x: 4394
         y: 0
-        width: 4856
+        width: 5929
         height: 2700
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: "\u53F6\u6893\u623F\u95F41000_2"
       rect:
         serializedVersion: 2
-        x: 9746
+        x: 9266
         y: 0
-        width: 4873.3335
+        width: 5353
         height: 2700
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -7,6 +7,7 @@ public class ChangeBackground : MonoBehaviour
     public GameObject[] Background;
     public int PresentPos=0;
     public float offset;
+    public float[] init;
     public float LerpDuration;
     void Update()
     {
@@ -64,10 +65,10 @@ public class ChangeBackground : MonoBehaviour
         while (time < LerpDuration)
         {
             time += Time.deltaTime;
-            Background[PresentPos].transform.position = Vector3.Lerp(startPos, new Vector3(0, 0, 0), time / LerpDuration);
+            Background[PresentPos].transform.position = Vector3.Lerp(startPos, new Vector3(init[PresentPos], 0, 0), time / LerpDuration);
             yield return null;
         }
-        Background[PresentPos].transform.position = new Vector3(0, 0, 0);
+        yield return null;
     }
 
     public IEnumerator LerpLeft()
@@ -77,10 +78,10 @@ public class ChangeBackground : MonoBehaviour
         while (time < LerpDuration)
         {
             time += Time.deltaTime;
-            Background[PresentPos].transform.position = Vector3.Lerp(startPos, new Vector3(0, 0, 0), time/ LerpDuration);
+            Background[PresentPos].transform.position = Vector3.Lerp(startPos, new Vector3(init[PresentPos], 0, 0), time/ LerpDuration);
             yield return null;
         }
-        Background[PresentPos].transform.position = new Vector3(0, 0, 0);
+        yield return null;
     }
 
 }
