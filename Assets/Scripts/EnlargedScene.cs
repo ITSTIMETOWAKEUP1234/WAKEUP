@@ -16,6 +16,7 @@ public class EnlargedScene : MonoBehaviour
                 string aimobjname = collided.name;
                 transform.parent.gameObject.transform.parent.gameObject.transform.Find(aimobjname).gameObject.SetActive(true);
                 transform.parent.gameObject.SetActive(false);
+                DialogeManager.instance.DialogeBox.SetActive(false);
                 FadeInOut.instance.In();
             }
             
