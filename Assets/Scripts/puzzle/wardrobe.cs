@@ -5,19 +5,25 @@ using static UnityEngine.GraphicsBuffer;
 
 public class wardrobe : MonoBehaviour
 {
-    public bool Complete = false;
     public bool isDragging = false;
     public GameObject moveObj=null;
     public Vector3 offset;
     public Vector3[] targetPos;
+    public GameObject[] obj;
     public float snapDistance;
     public int presentTarget;
     void Update()
-    {
-        isComplete();
-        OnMouseDown();
-        OnMouseDrag();
-        OnMouseUp();
+    { 
+        if(JudgeObjPos())
+        {
+            Debug.Log("Win");
+        }
+        else
+        {
+            OnMouseDown();
+            OnMouseDrag();
+            OnMouseUp();
+        }
     }
     private void OnMouseDown()
     {
@@ -49,13 +55,6 @@ public class wardrobe : MonoBehaviour
             SnapToTarget();
         }
     }
-    public void isComplete()
-    {
-        if (Complete)
-        {
-            this.gameObject.SetActive(false);
-        }
-    }
     public void SnapToTarget()
     {
         float minDistance = float.MaxValue;
@@ -74,5 +73,16 @@ public class wardrobe : MonoBehaviour
             moveObj.transform.position = targetPos[nearestTarget];
         }
 
-    } 
+    }
+    public bool JudgeObjPos()
+    {
+        for (int i = 0; i < obj.Length; i++)
+        {
+            if (obj[i].gameObject.transform.position != targetPos[i])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }
