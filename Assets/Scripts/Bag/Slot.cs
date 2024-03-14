@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Slot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Item slotItem;
+    public Image slotImage;
+    public void ItemOnClicked()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 1000);
+            if (hit.collider != null && hit.collider.tag == "slot")
+            {
+                InventoryManager.UpdateItemInfo(slotItem.itemInfo);
+            }
+        }
     }
 }

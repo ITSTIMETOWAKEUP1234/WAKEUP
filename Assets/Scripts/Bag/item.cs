@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Bag/New Item")]
-public class item : ScriptableObject
+[CreateAssetMenu(fileName = "New Item", menuName = "Inventory/New Item")]
+public class Item : ScriptableObject
 {
-
-    //物体名、需要在UI中显示的图片、持有物体的数量、物体信息的描述
-    public string itemName;
-    public Sprite itemImage;
-    public int itemNum;
-    [TextArea] //改变输入框格式，提示输入框容量
-    public string itemInfo;
+    public string itemName;//名字
+    public Sprite itemImage;//图像
+    [TextArea(1,3)]
+    public string itemInfo;//物品描述
+    public bool used;//是否被使用
+    public bool owned;//是否拥有
 }  

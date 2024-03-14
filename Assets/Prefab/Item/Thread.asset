@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 653ed507326599d4ba55040e1ec88b56, type: 3}
-  m_Name: Bag
+  m_Name: Thread
   m_EditorClassIdentifier: 
-  itemName: 
-  itemImage: {fileID: 0}
-  itemNum: 0
-  itemInfo: 
+  itemName: Thread
+  itemImage: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
+  itemInfo: "\u4E00\u6761\u7EBF"
+  used: 0
+  owned: 0
