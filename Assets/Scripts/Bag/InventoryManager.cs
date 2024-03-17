@@ -17,19 +17,7 @@ public class InventoryManager : MonoBehaviour
         {
             Destroy(this);
         }
-        else
-        {
-            Instance = this;
-        }
-    }
-    public void OnEnable()
-    {
-        //RefreshItem();
-        //Instance.itemInformation.text = "";
-    }
-    public static void UpdateItemInfo(string itemDescription)
-    {
-        Instance.itemInformation.text = itemDescription;
+        Instance = this;
     }
     public static void CreateNewItem(Item item)
     {
@@ -38,19 +26,4 @@ public class InventoryManager : MonoBehaviour
         newItem.slotItem = item;
         newItem.slotImage.sprite = item.itemImage;
     }
-    //public static void RefreshItem()
-    //{
-    //  for(int i = 0;i<Instance.slotGrid.transform.childCount;i++)
-     //   {
-     //       if(Instance.slotGrid.transform.childCount==0)
-     //       {
-     //           break;
-      //      }
-      //      Destroy(Instance.slotGrid.transform.GetChild(i).gameObject);
-     //   }
-     //   for(int i = 0;i< Instance.myBag.itemList.Count;i++)
-     //   {
-     //       CreateNewItem(Instance.myBag.itemList[i]);
-      //  }
-    //}
 }

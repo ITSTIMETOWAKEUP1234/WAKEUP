@@ -23,7 +23,7 @@ public class ItemToClick : MonoBehaviour
         if(!playerInventory.itemList.Contains(item))
         {
             playerInventory.itemList.Add(item);
+            InventoryManager.CreateNewItem(item);
         }
-        //InventoryManager.RefreshItem();
     }
 }

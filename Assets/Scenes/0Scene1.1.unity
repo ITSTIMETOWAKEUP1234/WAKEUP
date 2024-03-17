@@ -1207,7 +1207,7 @@ MonoBehaviour:
   - {fileID: 1310751363}
   - {fileID: 925138397}
   - {fileID: 1381806847}
-  PresentPos: 0
+  PresentPos: 1
   offset: 1
   init:
   - 1
@@ -2797,7 +2797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &925138398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4117,7 +4117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1304373987
 SpriteRenderer:
   m_ObjectHideFlags: 0
