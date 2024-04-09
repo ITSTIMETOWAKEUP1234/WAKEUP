@@ -5,22 +5,34 @@ using UnityEngine;
 
 public class PressToTalk : MonoBehaviour
 {
-    public int ID;
-    public int NextID;
-    public bool firsttime=true;
+    public int[] ID;
+    public int index=0;
+    public bool inspace = false;
     public GameObject player;
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        inspace = true;
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        inspace = false;
+    }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F)&& inspace)
         {
-            if(firsttime) 
-            { 
-                ID=NextID;
-                firsttime=false;
-            }
+            if (ID[index] == -1) return;
             player.GetComponent<PlayerMovement>().enabled = false;
-            DialogeManager.instance.ShowDialogue(ID);
+            DialogeManager.instance.ShowDialogue(ID[index]);
             player.GetComponent<PlayerMovement>().enabled = true;
+            if (index < ID.Length - 1)
+            {
+                index++;
+            }
+            else
+            {
+                index = ID.Length - 1;
+            }
         }
     }
 }

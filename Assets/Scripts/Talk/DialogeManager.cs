@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
 using System;
+using System.Reflection;
 
 public class DialogeManager : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class DialogeManager : MonoBehaviour
     public TMP_Text NameText;
     public TMP_Text DialogeText;
 
-    //public Sprite Character;
+    public SpriteRenderer Character;
     public TextAsset DialogeAsset;
 
     List<List<string>> dialogeLines=new List<List<string>>();
@@ -24,11 +25,17 @@ public class DialogeManager : MonoBehaviour
     public bool isScrolling;
     public float textspeed;
 
-    //public List<Sprite> sprites=new List<Sprite>();
-    //public Dictionary<string,Sprite> characterDic = new Dictionary<string,Sprite>();
+    public List<Sprite> sprites=new List<Sprite>();
+    public Dictionary<string,Sprite> characterDic = new Dictionary<string,Sprite>();
 
     public void Awake()
     {
+        characterDic["Ò¶è÷"] = sprites[0];
+        characterDic["ÂèÂè"] = sprites[1];
+        characterDic["Àõ¬‘"] = sprites[2];
+        characterDic["±Ï³õ"] = sprites[3];
+        characterDic["×íºº"] = sprites[4];
+        characterDic["Í¬Ñ§"] = sprites[5];
         ReadText(DialogeAsset);
         if (instance == null)
         {
@@ -52,7 +59,11 @@ public class DialogeManager : MonoBehaviour
                 if(isScrolling==false)
                 {
                     currentLine++;
-                    if (currentLine < TextLines.Count) { StartCoroutine(ScrollingText()); }
+                    if (currentLine < TextLines.Count) 
+                    {
+                        UpdataImage(NameLines[currentLine]);
+                        StartCoroutine(ScrollingText()); 
+                    }
                     else 
                     { 
                         DialogeBox.gameObject.SetActive(false); 
@@ -76,6 +87,7 @@ public class DialogeManager : MonoBehaviour
         {
             CharacterDialoge(ID);
         }
+        UpdataImage(NameLines[0]);
         StartCoroutine(ScrollingText());
         DialogeBox.gameObject.SetActive(true);
     }
@@ -119,5 +131,9 @@ public class DialogeManager : MonoBehaviour
             index = int.Parse(dialogeLines[index][4]);
             if (index == -1) return;
         }
+    }
+    public void UpdataImage(string name)
+    {
+        Character.sprite = characterDic[name];
     }
 }

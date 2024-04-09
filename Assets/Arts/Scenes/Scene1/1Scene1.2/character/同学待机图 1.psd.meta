@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bef7da89b192c5041b7fe4e1ee8ea602
+guid: ee659c0ea30a40840957776de26648d3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 35
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,127 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u53F6\u6893\u884C\u8D70\u56FE_0"
+      name: "\u540C\u5B66\u5F85\u673A\u56FE 1_0"
       rect:
         serializedVersion: 2
-        x: 14
-        y: 162
-        width: 31
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 15
+        y: 160
+        width: 30
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aafdbaf697480a48b37a8e28a778876
-      internalID: 397092923
+      spriteID: 8e2325f2a61b0ea4aa50eed77cd3b0b7
+      internalID: -1751107433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u53F6\u6893\u884C\u8D70\u56FE_1"
+      name: "\u540C\u5B66\u5F85\u673A\u56FE 1_1"
       rect:
         serializedVersion: 2
-        x: 78
-        y: 162
-        width: 24
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 75
+        y: 160
+        width: 30
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9916ee14caba35c41b8e4abd4b8074db
-      internalID: 69394208
+      spriteID: caaf298b510e89746a6880f363351317
+      internalID: -1415320927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u53F6\u6893\u884C\u8D70\u56FE_2"
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 162
-        width: 35
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bd2cf43e4dfe8b459621de7d0997e97
-      internalID: -1789828993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u53F6\u6893\u884C\u8D70\u56FE_3"
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 82
-        width: 35
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a3ec78b9744a4849809d06d0f9c1602
-      internalID: 981555180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u53F6\u6893\u884C\u8D70\u56FE_4"
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 82
-        width: 24
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d13332d4a8340334d9dcaaeaac41a4e1
-      internalID: 1240479880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u53F6\u6893\u884C\u8D70\u56FE_5"
+      name: "\u540C\u5B66\u5F85\u673A\u56FE 1_2"
       rect:
         serializedVersion: 2
         x: 135
-        y: 82
-        width: 31
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 160
+        width: 30
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13fb8cdbd14d85e48a8338f1556fe566
-      internalID: -262717059
+      spriteID: 9eebf6717ce75aa47899d32a717dd0d6
+      internalID: -971117922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u540C\u5B66\u5F85\u673A\u56FE 1_3"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 80
+        width: 30
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b13e7ea92b2d6d43968f170cc6887c8
+      internalID: 898869530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u540C\u5B66\u5F85\u673A\u56FE 1_4"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 80
+        width: 30
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f230180e416fa940acc1356b2438526
+      internalID: -1288098895
       vertices: []
       indices: 
       edges: []
@@ -241,12 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u53F6\u6893\u884C\u8D70\u56FE_0": 397092923
-      "\u53F6\u6893\u884C\u8D70\u56FE_1": 69394208
-      "\u53F6\u6893\u884C\u8D70\u56FE_2": -1789828993
-      "\u53F6\u6893\u884C\u8D70\u56FE_3": 981555180
-      "\u53F6\u6893\u884C\u8D70\u56FE_4": 1240479880
-      "\u53F6\u6893\u884C\u8D70\u56FE_5": -262717059
+      "\u540C\u5B66\u5F85\u673A\u56FE 1_0": -1751107433
+      "\u540C\u5B66\u5F85\u673A\u56FE 1_1": -1415320927
+      "\u540C\u5B66\u5F85\u673A\u56FE 1_2": -971117922
+      "\u540C\u5B66\u5F85\u673A\u56FE 1_3": 898869530
+      "\u540C\u5B66\u5F85\u673A\u56FE 1_4": -1288098895
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
